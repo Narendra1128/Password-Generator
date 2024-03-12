@@ -20,6 +20,7 @@ let passwordLength = 10 ;
 let password = '';
 let count = 0; 
 
+
 // slider
 function slider(){
     inputSlider.value = passwordLength;
@@ -29,6 +30,8 @@ function slider(){
     inputSlider.style.backgroundSize = (passwordLength/(max-min+1)*100)+"%";
 }
 slider();
+
+setIndicator("#fff")
 
 inputSlider.addEventListener('input', function(eve){
     passwordLength = eve.target.value
