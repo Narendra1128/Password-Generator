@@ -24,6 +24,9 @@ let count = 0;
 function slider(){
     inputSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength;
+    let min = inputSlider.min;
+    let max = inputSlider.max;
+    inputSlider.style.backgroundSize = (passwordLength/(max-min+1)*100)+"%";
 }
 slider();
 

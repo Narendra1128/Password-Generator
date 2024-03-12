@@ -232,7 +232,6 @@ h1 {
     background-repeat: no-repeat;
     border:none;
     outline:none;
-    z-index:-1;
 }
 
 .slider::-webkit-slider-thumb {
